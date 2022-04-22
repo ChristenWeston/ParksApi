@@ -10,7 +10,7 @@ namespace ParksApi.Models
 
     [Required]
     public int SquareFootage { get; set; }
-    [Required]
+
     public string City { get; set; }
     public string State { get; set; }
     [Required]
