@@ -4,9 +4,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Parks.Models;
+using ParksApi.Models;
 
-namespace Parks
+namespace ParksApi
 {
     public class Startup
     {
@@ -21,7 +21,7 @@ namespace Parks
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<ParkContext>(opt =>
+            services.AddDbContext<ParksContext>(opt =>
                 opt.UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
             // Register the swagger services
             services.AddSwaggerDocument();
