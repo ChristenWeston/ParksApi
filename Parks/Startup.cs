@@ -21,7 +21,7 @@ namespace ParksApi
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<ParksContext>(opt =>
+            services.AddDbContext<ParksApiContext>(opt =>
                 opt.UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
             // Register the swagger services
             services.AddSwaggerDocument();
