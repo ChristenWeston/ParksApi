@@ -1,4 +1,4 @@
-# Parks :national_park: API :croissant: :mountain:
+# Parks :national_park: API :mountain:
 :desert: :leaves: :volcano: :deciduous_tree:
 :butterfly: :gorilla: :owl: :monkey: :eagle: :zebra: :duck: :hippopotamus: :crocodile: :rhinoceros: :whale: :sloth: :snail:
 
@@ -12,7 +12,7 @@
 #### Get all parks
 
 ```http
-  GET api/parks
+  GET /api/parks
 ```
 
 | Parameter | Type     | Description                |
@@ -55,7 +55,7 @@ Returns a list of Parks for the Country with the most parks
 #### Post Park
 
 ```http
-  POST api/parks
+  POST /api/parks
 ```
 
 | Parameter | Type     | Description                |
@@ -69,7 +69,7 @@ Returns a list of Parks for the Country with the most parks
 #### Put Park
 
 ```http
-  PUT api/parks/${id}
+  PUT /api/parks/${id}
 ```
 
 | Parameter | Type     | Description                |
@@ -83,7 +83,7 @@ Returns a list of Parks for the Country with the most parks
 #### Delete Park
 
 ```http
-  DELETE api/parks/${id}
+  DELETE /api/parks/${id}
 ```
 
 | Parameter | Type     | Description                       |
