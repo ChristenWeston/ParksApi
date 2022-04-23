@@ -20,7 +20,9 @@ namespace ParksApi.Controllers
     {
       _db = db;
     }
-
+    /// <summary>
+    /// Pulls a list of all Parks based on certain search parameters including 'name', 'size', and/or 'country'
+    /// </summary>
     // GET api/parks
     //http://localhost:5001/api/parks?name=Etosha
     [HttpGet]
